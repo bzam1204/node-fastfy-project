@@ -1,0 +1,31 @@
+POST http://localhost:9241/videos
+Content-Type: application/json
+
+{
+    "title": "Laura andando de bike",
+    "description": "primeiro video",
+    "duration": 298
+}
+
+###
+
+GET http://localhost:9241/videos
+
+###
+
+GET http://localhost:9241/videos?search=laur
+
+### 
+
+PUT http://localhost:9241/videos/17144ea9-6455-4a9f-a8eb-3dbadb8441f8
+Content-Type: application/json
+
+{
+    "title": "passeio com a laurex",
+    "description": "foi bom demais",
+    "duration": 600
+}
+
+###
+
+DELETE  http://localhost:9241/videos/19258f0b-cbda-4ad4-be30-b9e4ab803ff8
